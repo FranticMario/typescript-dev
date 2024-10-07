@@ -5,7 +5,7 @@ const artworks: string[] = [
     "Die Nachtwache - Rembrandt",
     "Die Mona Lisa - Leonardo da Vinci",
     "Die Kartoffelesser - Vincent van Gogh",
-    "Der Schrei - Edvard Munch",  // Исправил на "Der Schrei"
+    "Der Schrei - Edvard Munch",  
     "Das letzte Abendmahl - Leonardo da Vinci",
     "Die freudige Botschaft - James Tissot",
     "Der Garten der Lüste - Hieronymus Bosch"
@@ -18,7 +18,7 @@ const artworkDates: string[] = [
     "Die Nachtwache - 1642",
     "Die Mona Lisa - 1503",
     "Die Kartoffelesser - 1885",
-    "Der Schrei - 1893",  // Как и ранее, исправлено на "Der Schrei"
+    "Der Schrei - 1893",  
     "Das letzte Abendmahl - 1495",
     "Die freudige Botschaft - 1885",
     "Der Garten der Lüste - 1505"
@@ -35,7 +35,7 @@ const artworkName = (name: string) => {
 
 const suchString = (arr: string[], name: string): string => {
     const result = arr.find((item) => item.includes(name));
-    return result ? result.split("-")[1].trim() : "Автор не найден";
+    return result ? result.split("-")[1].trim() : "nichts gefunden";
 }
 
 console.log(artworkName("Der Schrei"))
