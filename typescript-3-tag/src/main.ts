@@ -19,7 +19,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <a href="./src/array/array.html" class="array">array</a>
 
       <a href="./src/array_2/array-two.html" class="">Array two</a>
-
+      <a href="./src/loops/loops.html" class="">Loops</a>
   </div>
 `
 
