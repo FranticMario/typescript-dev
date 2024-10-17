@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+
+    <ul>
+        <div class="listContainer">
+          <li><a class="nav" id="navHome" href="#home">Home</a></li>
+          <li><a class="nav" id="navNews" href="#news">News</a></li>
+          <li><a class="nav" id="navContact" href="#contact">Contact</a></li>
+        </div>
+        <li class="nav"><a class="active" id="navChange">Change me</a></li>
+      </ul>
+
+
+      <div>
+        <form id="form1">
+          <label for="vorname">Vorname</label
+          ><input type="text" id="vorname" name="vorname" placeholder="Dein Name..." /><label for="nachname"
+            >Last Name</label
+          ><input type="text" id="nachname" name="nachname" placeholder="Dein Nachname..." /><label for="land">Land</label
+          ><select id="land" name="land">
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+            <option value="Usa">USA</option></select
+          ><input id="btn" type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <div class="app">
+        <div id="content">
+
+        </div>
+        <button class="btn__add-img">
+            click Me
+        </button>
+      </div>
+
+    <script type="module" src="./dom2.ts"></script>
+</body>
+</html>
