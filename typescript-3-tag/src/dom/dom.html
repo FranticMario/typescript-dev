@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS-Vertiefung-Dom-Elements-Level-1_2</title>
+  </head>
+
+  <body>
+    <h1>Meine Einkaufsliste</h1>
+
+    <input type="text" id="inputText" placeholder="Ich benötige..." />
+    <button type="button" id="btn__input">Hinzufügen</button>
+
+    <ul id="myList">
+      <!-- Hier werden die dynamisch hinzugefügten Elemente erscheinen -->
+    </ul>
+
+
+    <div class="style">
+        <div class="example">Ein div mit class="example".</div>
+  
+        <div class="example">Ein weiteres div mit class="example".</div>
+  
+        <p class="example">Dies ist ein p-Element mit class="example"</p>
+  
+        <p>Dies ist ein <span class="example">span</span> Element mit class="example" in einem anderen p-Element.</p>
+  
+        <p>Klicken Sie auf die Button, um die Hintergrundfarbe aller Elemente mit class="example" zu ändern.</p>
+  
+        <button class="example" id="btn">Versuchen Sie es</button>
+      </div>
+  
+
+      <form>
+        <select id="farbeAuswahlen">
+          <option>Medium Orchid</option>
+          <option>Mint Cream</option>
+          <option>Dodger Blue</option>
+          <option>Goldenrod</option>
+          <option>Wheat</option>
+          <option>Medium Turquoise</option>
+          <option>Moccasin</option>
+          <option>Fire Brick</option>
+          <option>Lime Green</option>
+          <option>Slate Gray</option>
+        </select>
+        <button type="button" id="btn__farbe-delete">Farbe von Liste Entfernen</button>
+      </form>
+  
+
+    <script type="module" src="./dom.ts"></script>
+  </body>
+</html>
