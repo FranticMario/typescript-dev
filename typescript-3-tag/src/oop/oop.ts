@@ -31,7 +31,7 @@ const class1 = new SchoolClass("Mathematik", 1, [person1, person2, person3]);
 const class2 = new SchoolClass("Physik", 2);
 const class3 = new SchoolClass("Chemie", 3);
 
-console.log(class1)
+console.log(person1)
 
 // ===================================================================================
 // OOP-Class-TS-Level-2_2
