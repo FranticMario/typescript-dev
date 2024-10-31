@@ -8,10 +8,12 @@ const resetBtn = document.querySelector("#reset-button") as HTMLElement;
 const time = document.querySelector("#time") as HTMLElement
 
 let interval:number;
-
+let isEnabled:boolean = true;
+let memberLastNum:number = 0;
 
 const startTimer = () => {
     let sec = 0;
+    clearInterval(interval)
     console.log(time.textContent === "00:00")
     if(minutes) {
         let startMin:number;
@@ -23,8 +25,9 @@ const startTimer = () => {
             startMin  = Number(minutes.value)
             sec = 0
         }
-
+        minutes.value = ""
         interval = setInterval(() => {
+
             sec--
             if (sec < 0) {
                 if (startMin === 0 && sec < 0) {
@@ -49,7 +52,15 @@ const restartTimer = () => {
 }
 
 const pauseTímer = () => {
-    clearInterval(interval)
+
+    if(isEnabled) {
+        clearInterval(interval)
+        isEnabled = false
+    } else {
+        startTimer()
+        isEnabled = true
+    }
+ 
 }
 
 const resetTimer = () => {
