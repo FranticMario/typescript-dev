@@ -15,18 +15,23 @@ const homework3 = new Promise<string>((resolve, reject) => {
     setTimeout(() => resolve(" Exercise 3 done"), 3000);
 })
 
-homework1.then((response) => {
-    paragraph.textContent +=response;
-    return homework2
-}).then((response) => {
-    paragraph.textContent += response;
-    return homework3
-}).then((response) => {
-    paragraph.textContent += response;
-}).catch((err) => {
-    console.error(err)
+// homework1.then((response) => {
+//     paragraph.textContent +=response;
+//     return homework2
+// }).then((response) => {
+//     paragraph.textContent += response;
+//     return homework3
+// }).then((response) => {
+//     paragraph.textContent += response;
+// }).catch((err) => {
+//     console.error(err)
+// })
+
+
+Promise.all([homework1,homework2,homework3]).then(response => {
+    console.log(response)
+    response.forEach(item => {
+        paragraph.textContent +=item;
+    })
 })
-
-
-
 
